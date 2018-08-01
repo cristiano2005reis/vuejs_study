@@ -8,11 +8,7 @@
       </v-layout>
     </v-container>
     <v-form v-model="valid">
-      <v-text-field prepend-icon="attach_file" single-line
-      :label="Label" :required="required"
-      :disabled="disabled" ref="fileTextField"></v-text-field>
-      <input type="file" :accept="accept" :multiple="multiple" :disabled="disabled"
-      ref="fileInput">
+      <v-text-field prepend-icon="attach_file" single-line color="info" label="Label" type="file"></v-text-field>
     </v-form>
   </div>
 </template>

@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import Company from '@/components/Company'
+import FirstPage from '@/components/FirstPage'
+import Hello from '@/components/Hello'
 import Home from '@/components/Home'
 import Upload from '@/components/Upload/Index'
-import Hello from '@/components/Hello'
-import FirstPage from '@/components/FirstPage'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/first-page',
       name: 'FirstPage',
       component: FirstPage
+    },
+    {
+      path: '/company',
+      name: 'Company',
+      component: Company
     }
   ]
 })
