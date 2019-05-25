@@ -5,6 +5,7 @@ import FirstPage from '@/components/FirstPage'
 import Hello from '@/components/Hello'
 import Home from '@/components/Home'
 import Upload from '@/components/Upload/Index'
+import Login from '@/components/login/Login'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/company',
       name: 'Company',
       component: Company
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
     }
   ]
 })
